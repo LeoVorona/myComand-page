@@ -64,9 +64,40 @@ main .mainWelcome h1{
 .mycompany{
     color: #fcac45;
 }
+.wrapper {
+    width: 76%;
+    margin: 0 auto;
+}
+main .mainAbout{
+    display: flex;
+    padding: 100px 0 100px 0;
+}
+.aboutRight{
+    margin-left: 80px;
 
+}
+.aboutRight h1 {
+    display: inline-block;
+    border-bottom: 3px solid #fcac45;
+    padding-bottom: 20px;
+    font-weight: 100;
+}
 
+.aboutRight p {
+    margin: 30px 0 50px 0;
+    color: #6c6c6c;
+}
 
+.aboutRight li {
+    background: url() 0px no-repeat;  /* вырезать маркеры из макета  */
+    padding-left: 25px;
+    margin-top: 10px;
+    color: #5a5a5a;
+}
+
+.mv-100{
+    min-width: 100%;
+}
 
 
 
@@ -80,6 +111,7 @@ main .mainWelcome h1{
     nav{
         margin-left: 25%;
     }
+    
 }
 
 @media screen and (max-width: 1165px) {
@@ -91,6 +123,32 @@ main .mainWelcome h1{
 @media screen and (max-width: 1080px) {
     nav{
         margin-left: 10%;
+    }
+    main .mainWelcome{
+        padding: 50px 0 50px 0;
+    }
+    main .mainWelcome p{
+        font-size: 14px;
+    }
+    main .mainWelcome h1{
+        font-size: 25px;
+    }
+    .mv-100{
+        max-width: 100%;
+    }
+    .mainAbout{
+        flex-direction: column;
+    }
+    .aboutRight{
+        text-align: center;
+        margin-left: 0;
+    }
+    .aboutRight li{
+        text-align: left;
+    }
+    .aboutRight h1{
+        margin-top: 10px;
+        font-size: 20px;
     }
 }
 
@@ -134,12 +192,12 @@ main .mainWelcome h1{
     }
    
 }
-@media screen and (min-width: 1920px){
+@media screen and (min-width: 1925px){
     nav {
         
      margin-left: 47%;
     }
-   
+
 }
 
    
