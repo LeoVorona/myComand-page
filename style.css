@@ -42,6 +42,36 @@ nav{
 .topnav .icon{
     display: none;
 }
+main{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+main .mainWelcome{
+    background: black;
+    text-align: center;
+    padding: 200px 0px 410px 0px;
+}
+main .mainWelcome p{
+    color: #999999;
+    font-size: 20px;
+}
+main .mainWelcome h1{
+    color: #999999;
+    font-size: 44px;
+    font-weight: 100;
+}
+.mycompany{
+    color: #fcac45;
+}
+
+
+
+
+
+
+
+
 
 
 
@@ -97,3 +127,21 @@ nav{
         text-align: left;
     }
 }
+@media screen and (min-width: 1600px){
+    nav {
+        
+     margin-left: 35%;
+    }
+   
+}
+@media screen and (min-width: 1920px){
+    nav {
+        
+     margin-left: 47%;
+    }
+   
+}
+
+   
+
+
