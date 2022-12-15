@@ -218,6 +218,19 @@ padding-bottom: 30px;
 
 
 
+@media screen and (max-width:1400px){
+    .mainWork .gallery img{
+        width: 213px;
+        height: 187px;
+    }
+}
+@media screen and (max-width:1140px){
+    .mainWork .gallery img{
+        width: 163px;
+        height: 137px;
+    }
+}
+
 
 
 @media screen and (max-width: 1240px) {
