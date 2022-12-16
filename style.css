@@ -66,6 +66,9 @@ main .mainWelcome h1{
     font-size: 44px;
     font-weight: 100;
 }
+main .mainWelcome h1:after{
+    display: none;
+}
 .mycompany{
     color: #fcac45;
 }
@@ -78,23 +81,28 @@ main .mainAbout{
     padding: 100px 0 100px 0;
 }
 .aboutRight{
-    margin-left: 80px;
+    margin-left: 275px;
 
 }
-.aboutRight h1 {
+
+.aboutRight h1{
     display: inline-block;
     border-bottom: 3px solid #fcac45;
     padding-bottom: 20px;
     font-weight: 100;
+    
+}
+.aboutRight h1:after{
+    display: none;
 }
 
-.aboutRight p {
+.aboutRight p{
     margin: 30px 0 50px 0;
     color: #6c6c6c;
 }
 
 .aboutRight li {
-    background: url() 0px no-repeat;  /* вырезать маркеры из макета  */
+    background: url(images/li.png) 0px no-repeat;  
     padding-left: 25px;
     margin-top: 10px;
     color: #5a5a5a;
@@ -113,14 +121,7 @@ main .mainAbout{
 font-size: 44px;
 padding-bottom: 30px;
 }
-.line{
-    width: 100px;
-    height: 3px;
-    background: #fcac45; /* выровнять линию */
-    position: relative;
-    left: 45%;
-    margin-bottom: 85px;
-}
+
 .photo{
     background: #fcac45;
     height: 125px;
@@ -211,13 +212,115 @@ padding-bottom: 30px;
     margin-bottom: 175px;
     color: #6c6c6c;
 }
+.mainWork img:hover{
+    opacity: 0.9;
+}
+
+.contactForm{
+    padding: 100px 0 100px 0;
+}
+
+.contactForm h1,p{
+    text-align: center;
+}
+
+.contactWrapper{
+    width: 753px;
+    margin: 0 auto;
+    color: #636363;
+}
+.red{
+    color: red;
+}
+.contactForm h1{
+    color: black;
+    margin-bottom: 30px;
+}
+form p{
+    text-align: left;
+}
+.formInputs{
+    display: flex;
+    margin-top: 100px;
+}
+input{
+    width: 360px;
+    height: 40px;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+input:first-of-type{
+    margin-right: 23px;
+}
+textarea{
+    width: 100%;
+    height: 163px;
+}
+input, textarea{
+    border: 1px solid #999999;
+    margin-top: 5px;
+}
+.buttonBlock{
+    display: flex;
+    justify-content: flex-end;
+}
+input[type=submit] {
+    width: 165px;
+    height: 40px;
+    background: #fcac45;
+    color: white;
+    margin-right: 0;
+    margin-top: 20px;
+}
+h1:after{
+    content: "";
+    display: block;
+    margin: 0 auto;
+    width: 100px;
+    padding-top: 30px;
+    border-bottom: 3px solid #fcac45;
+}
+footer{
+    width: 100%;
+    height: auto;
+    background: #222222;
+    padding: 30px 0 30px 0;
+}
+.social{
+    display: flex;
+    justify-content: center;
+
+}
+.social img{
+    margin-left: 12px;
+}
+.social img:hover{
+    opacity: 0.6;
+}
 
 
 
 
 
 
-
+@media screen and (max-width:1550px){
+    .aboutRight{
+        margin-left:150px;
+    
+    }
+}
+@media screen and (max-width:1370px){
+    .aboutRight{
+        margin-left:100px;
+    
+    }
+}
+@media screen and (max-width:1300px){
+    .aboutRight{
+        margin-left:30px;
+    
+    }
+}
 @media screen and (max-width:1400px){
     .mainWork .gallery img{
         width: 213px;
@@ -236,6 +339,10 @@ padding-bottom: 30px;
 @media screen and (max-width: 1240px) {
     nav{
         margin-left: 25%;
+    }
+    .aboutRight{
+        margin-left:75px;
+    
     }
     
 }
@@ -328,12 +435,23 @@ padding-bottom: 30px;
     .servicesCards{
         grid-template-columns: auto;
     }
+
+    .line1 img:not(:first-child){
+        display: none;
+    }
+    .line2 img:not(:first-child){
+        display: none;
+    }
+    .line3 img:not(:first-child){
+        display: none;
+    }
 }
 @media screen and (min-width: 1600px){
     nav {
         
      margin-left: 35%;
     }
+
    
 }
 @media screen and (min-width: 1925px){
